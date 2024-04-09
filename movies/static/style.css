@@ -1,0 +1,282 @@
+body {
+    color: #eef8f7;
+    margin: 0;
+    padding: 0;
+    background-color: #0D1117; /* Color de fondo base */
+    background-image:
+        linear-gradient(90deg, transparent 3px, #0D1117 2px, #0D1117 8px), /* Rayas horizontales */
+        linear-gradient(#10151d 1px, transparent 2px, transparent 4px); /* Rayas verticales */
+    background-size: 8px 8px; /* Tamaño del patrón */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #010409;
+    border: 1px solid #21262d;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 36px;
+    margin: 0;
+    margin-left: 35px;
+}
+
+nav ul {
+    margin-right: 140px;
+    list-style: none; /* Quita los marcadores de lista predeterminados (puntos) */
+    display: flex; /* Convierte la lista en un contenedor flex */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+    padding: 0; /* Quita el espacio de relleno predeterminado de la lista */
+}
+
+nav ul li a{
+    margin: 0 5px; /* Quita el margen entre elementos de la lista */
+    padding: 10px; /* Añade relleno para espaciar los elementos */
+    border: 1px solid #30363D; /* Añade un borde a cada elemento (opcional) */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; /* Sin redondeo en la esquina inferior izquierda */
+    border-bottom-right-radius: 15px; /* Sin redondeo en la esquina inferior derecha */
+    transition: background-color 0.3s, margin 0.3s;
+}
+nav ul li a:hover {
+    background-color: #171b20; /* Cambia el fondo al pasar el mouse */
+    border-color: #8b949E;
+    margin: 0 10px; /* Cambia el margen al pasar el mouse */
+}
+/* Estilo para los enlaces no visitados */
+a {
+    color: #f0f9ff; /* Cambia el color predeterminado de los enlaces (azul en este caso) */
+    text-decoration: none; /* Elimina el subrayado en los enlaces no visitados */
+}
+/* Estilo para los enlaces visitados */
+a:visited {
+    color: #f0f9ff; /* Cambia el color de los enlaces visitados (azul en este caso) */
+}
+/* Estilo para los enlaces cuando el mouse está encima de ellos */
+a:hover {
+    color: rgb(178, 203, 221);
+}
+
+/* Estilo para la galería de películas y recomendaciones */
+.content-container {
+    margin-left: 35px; /* Mueve el contenido del cuerpo 35 píxeles a la derecha */
+}
+
+.recommended-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recommended {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    position: relative; /* Importante para posicionar el texto dentro */
+    overflow: hidden; /* Oculta el texto que se desborda */
+}
+
+/* Estilo para las imágenes en la sección de películas */
+.recommended img {
+    width: 100%; /* Establece el ancho deseado para las imágenes (100% para llenar el contenedor) */
+    height: 100%;
+    display: block;
+    transition: transform 0.5s; /* Efecto de transición suave al pasar el mouse */
+}
+
+.recommended-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 17, 22, 0.8); /* Fondo oscuro con opacidad */
+    color: #cfe8f7; /* Texto blanco */
+    padding: 20px;
+    transform: translateY(150%)translateX(150%) rotate(45deg) skew(20deg, 20deg); /* Inicialmente, mueve el texto hacia abajo */
+    transition: transform 0.5s; /* Efecto de transición suave al pasar el mouse */
+}
+
+h3 {
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 36px;
+    margin: 0;
+    margin-left: 35px;
+}
+
+/* Estilo para el efecto de pasar el mouse sobre la película */
+.recommended:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+.recommended:hover .recommended-info {
+    transform: translateY(0); /* Muestra la información moviéndola hacia arriba */
+}
+
+/* Estilo para los botones de navegación */
+.nav-button {
+    background-color: #0073e6; /* Fondo azul para los botones */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px; /* Espacio entre los botones */
+    cursor: pointer;
+}
+/* Alinear los botones a los lados de la galería */
+#prev-button {
+    width: 5%;
+    width: 10%;
+    align-items: center;
+    text-align: center;
+    float: left;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 76px;
+    cursor: pointer;
+}
+#next-button {
+    width: 5%;
+    width: 10%;
+    text-align: center;
+    float: right;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 76px;
+    cursor: pointer;
+}
+#prev-button-2 {
+    width: 5%;
+    width: 10%;
+    align-items: center;
+    text-align: center;
+    float: left;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 76px;
+    cursor: pointer;
+}
+#next-button-2 {
+    width: 5%;
+    width: 10%;
+    text-align: center;
+    float: right;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 76px;
+    cursor: pointer;
+}
+/* Estilo para el Pie de pagina */
+footer {
+    background-color: #010409;
+    border: 1px solid #21262d;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #f3f8fc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.front {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #161b22;
+    border: 1px solid #193133;
+    margin-left: 65px;
+}
+.front img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+tr {
+    
+    background-color: #010409;
+    border: 5px solid #21262d;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tt {
+
+    background-color: #161b22;
+    border: 1px solid #193133;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor {
+    padding: 5px;
+    background-color: #161b22;
+    border: 1px solid #193133;
+    width: 150px;
+    height: 200px;
+    display: block;
+}
+table {
+    display: flex;
+    justify-content: space-between; 
+}
+.p{
+    padding: 20px 40px;
+}
+.r {
+    margin-left: 35px;
+    margin-right: 15px;
+    padding: 20px 40px;
+}
+
+/* Estilo base para los botones */
+.button {
+    width: 10%;
+    text-align: center;
+    background-color: #161b22;
+    border: 1px solid rgb(25, 49, 51);
+    color: #f3f8fc; /* Texto blanco */
+    font-size: 76px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el hover */
+.button:hover {
+    background-color: #2c3840;
+}
+
+/* Estilo para la animación */
+.button.animated {
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

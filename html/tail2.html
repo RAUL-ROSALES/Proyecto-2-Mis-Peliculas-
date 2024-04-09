@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MyMovies - Encuentra tus películas favoritas</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>MyMovies</h1>
+        <nav>
+            <ul>
+                <li><a href="index">Página principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="r">
+        <table>
+            
+            <tr>
+                <td>
+                    <div class="front">
+                        <img src="static/images/2.jpg" alt="Portada">
+                    </div>
+                </td>
+                <td>
+                    <h1 class="tt">Titanic</h1>
+
+                    <h2>Título: Titanic</h2>
+                    <p>Año: 1997</p>
+                    <p>País: Estados Unidos</p>
+                    <p>Estreno: 19 de diciembre de 1997</p>
+                    <p>Descripción: Una película de romance y drama dirigida por James Cameron.</p>
+                    <p>Estudio: 20th Century Fox y Paramount Pictures</p>
+                    <p>Duración: 195 minutos</p>
+                    <p>Ingresos: Más de $2.1 mil millones</p>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="r">
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A2_2.jpg" alt="Reparto1">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Leonardo DiCaprio</h2>
+                    <h1>Biography</h1>
+                    <p>Leonardo Wilhelm DiCaprio (born November 11, 1974) is an American actor and film producer. Known for his work in biopics and period films, DiCaprio is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A2_1.jpg" alt="Reparto2">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Kate Winslet</h2>
+                    <h1>Biography</h1>
+                    <p>Kate Elizabeth Winslet (born October 5, 1975) is an English actress. Known for her work in independent films, particularly period dramas, as well as for her portrayals of headstrong and complicated women, she has received numerous accolades, including an Academy Award, a Grammy Award, two Primetime Emmy Awards, three British Academy Film Awards, and five Golden Globe Awards.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>© Proyecto 2 De programacion Web Mis Peliculas</p>
+        <p>Hecho por Rosales Fuentes Raul</p>
+    </footer>
+</body>
+</html>

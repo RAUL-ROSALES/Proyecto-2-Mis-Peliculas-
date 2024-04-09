@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MyMovies - Encuentra tus películas favoritas</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>MyMovies</h1>
+        <nav>
+            <ul>
+                <li><a href="index">Página principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="r">
+        <table>
+            
+            <tr>
+                <td>
+                    <div class="front">
+                        <img src="static/images/4.jpg" alt="Portada">
+                    </div>
+                </td>
+                <td>
+                    <h1 class="tt">The Shawshank Redemption</h1>
+                    
+                    <h2>Título: The Shawshank Redemption</h2>
+                    <p>Año: 1994</p>
+                    <p>País: Estados Unidos</p>
+                    <p>Estreno: 23 de septiembre de 1994</p>
+                    <p>Descripción: Una película de drama carcelario basada en una historia de Stephen King.</p>
+                    <p>Estudio: Columbia Pictures</p>
+                    <p>Duración: 142 minutos</p>
+                    <p>Ingresos: $28.4 millones</p>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="r">
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A4_2.jpg" alt="Reparto1">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Morgan Freeman</h2>
+                    <h1>Biography</h1>
+                    <p>Morgan Freeman (born June 1, 1937) is an American actor, director, and narrator. Noted for his distinctive deep voice, Freeman is known for his various roles in a wide variety of film genres. Throughout his career spanning over five decades, he has received multiple accolades, including an Academy Award, a Screen Actors Guild Award, and a Golden Globe Award.</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A4_1.jpg" alt="Reparto2">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Tim Robbins</h2>
+                    <h1>Biography</h1>
+                    <p>Timothy Francis Robbins (born October 16, 1958) is an American actor, screenwriter, director, producer, and musician. He is best known for his portrayal of Andy Dufresne in the prison drama film The Shawshank Redemption (1994).</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>© Proyecto 2 De programacion Web Mis Peliculas</p>
+        <p>Hecho por Rosales Fuentes Raul</p>
+    </footer>
+</body>
+</html>

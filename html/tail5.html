@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MyMovies - Encuentra tus películas favoritas</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>MyMovies</h1>
+        <nav>
+            <ul>
+                <li><a href="index">Página principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="r">
+        <table>
+            
+            <tr>
+                <td>
+                    <div class="front">
+                        <img src="static/images/5.jpg" alt="Portada">
+                    </div>
+                </td>
+                <td>
+                    <h1 class="tt">Alien</h1>
+                    
+                    <h2>Título: Alien</h2>
+                    <p>Año: 1979</p>
+                    <p>País: Estados Unidos</p>
+                    <p>Estreno: 25 de mayo de 1979</p>
+                    <p>Descripción: Una película de ciencia ficción y terror dirigida por Ridley Scott.</p>
+                    <p>Estudio: 20th Century Fox</p>
+                    <p>Duración: 117 minutos</p>
+                    <p>Ingresos: $203.6 millones</p>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="r">
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A5_1.jpg" alt="Reparto1">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Sigourney Weaver</h2>
+                    <h1>Biography</h1>
+                    <p>Susan Alexandra "Sigourney" Weaver (born October 8, 1949) is an American actress. Weaver is considered to be a pioneer of action heroines in science fiction films. She is known for her role as Ellen Ripley in the Alien franchise, which earned her an Academy Award nomination in 1986 and is often regarded as one of the most significant female protagonists in cinema history.</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <a>
+                        <img class="actor"src="static/images/A5_2.jpg" alt="Reparto2">
+                    </a>
+                </td>
+                <td class="p">
+                    <h2>Tom Skerritt</h2>
+                    <h1>Biography</h1>
+                    <p>Thomas Roy Skerritt (born August 25, 1933) is an American actor who has appeared in more than forty films and more than two hundred television episodes since 1962. He is known for his film roles in MAS*H, Alien, The Dead Zone, Top Gun, A River Runs Through It, Up in Smoke, and the television series Picket Fences. Skerritt has earned several nominations and awards, including a Primetime Emmy Award for Outstanding Lead Actor in a Drama Series in 1993 for Picket Fences. Description above from the Wikipedia article Tom Skerritt, licensed under CC-BY-SA, full list of contributors on Wikipedia.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>© Proyecto 2 De programacion Web Mis Peliculas</p>
+        <p>Hecho por Rosales Fuentes Raul</p>
+    </footer>
+</body>
+</html>
