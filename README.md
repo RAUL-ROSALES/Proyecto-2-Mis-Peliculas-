@@ -5,6 +5,8 @@ Este proyecto consiste en desarrollar una aplicación
 web para recomendar películas a los usuarios. Para este proyecto utilizaremos el framework django. Este framework es uno de los más populares en Python, su fuerte es el lado del servidor e incluye un ORM muy completo, un lenguaje de platillas y la capacidad de crear una aplicación para administrar el contenido de la base de datos.
 
 modelo
+![image](https://github.com/RAUL-ROSALES/Proyecto-2-Mis-Peliculas-/assets/55122080/74414513-563f-4418-87bd-f60f24209ca2)
+
 
 El proyecto consiste en:
 
