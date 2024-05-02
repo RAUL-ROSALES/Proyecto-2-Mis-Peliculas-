@@ -7,7 +7,7 @@ web para recomendar películas a los usuarios. Para este proyecto utilizaremos e
 modelo
 ![image](https://github.com/RAUL-ROSALES/Proyecto-2-Mis-Peliculas-/assets/55122080/74414513-563f-4418-87bd-f60f24209ca2)
 
-
+## https://www.loom.com/share/9aedd6e5247c4ee3b874f141b8a636e4?sid=ac61873a-4f81-4987-900d-05ac238f935c
 El proyecto consiste en:
 
 Implementar mínimo el modelo que se muestra dentro de las líneas punteadas en la imágen.
